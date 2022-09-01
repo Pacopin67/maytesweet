@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Catalogo</title>
+</head>
+<body>
+    <div class="grid-container">
+        
+            <img class="grid-item" src="/img/cajas/IMG-20220816-WA0015.jpg" alt="">
+            <img class="grid-item" src="/img/cajas/IMG-20220816-WA0017.jpg" alt="">
+            <img class="grid-item" src="/img/cajas/IMG-20220816-WA0019.jpg"  alt="">
+            <img class="grid-item" src="/img/disenos/album1.png" alt="">
+            <img class="grid-item" src="/img/disenos/IMG-20220816-WA0018.jpg" alt="">
+            <img class="grid-item" src="/img/disenos/IMG-20220816-WA0019.jpg" alt="">
+            <img class="grid-item" src="/img//mesitas_dulces/01-cake_pop.jpg" alt="">
+            <img class="grid-item" src="/img/mesitas_dulces/01-cakesicles.jpg" alt="">
+            <img class="grid-item" src="/img/mesitas_dulces/01-marshallow_pops.jpg" alt="">
+            <img class="grid-item" src="/img/mesitas_dulces/02-cake_pop.jpg" alt="">
+            <img class="grid-item" src="/img/mesitas_dulces/02-cakesicles.jpg" alt="">
+            <img class="grid-item" src="/img/mesitas_dulces/02-cupcakes.jpg" alt="">
+            <img class="grid-item" src="/img/mesitas_dulces/03-cupcakes.jpg" alt="">
+            <img class="grid-item" src="/img/regalos/IMG-20220816-WA0018.jpg" alt="">
+            <img class="grid-item" src="/img/regalos/IMG-20220816-WA0021.jpg" alt="">
+            <img class="grid-item" src="/img/regalos/IMG-20220816-WA0023.jpg" alt="">
+        
+    </div>
+
+    <div class="burbujas">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+    </div>
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+
+    <script>
+        var elem = document.querySelector('.grid-container');
+        var msnry = new Masonry( elem, {
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 230px;
+        });
+    </script>
+</body>
+</html>

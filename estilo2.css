@@ -1,0 +1,32 @@
+.grid-container{
+    display: grid;
+    /*creo columna con un algoritmo*/
+    grid-template-columns: repeat(auto-fill,230px);
+    /*separo las columnas*/
+    gap: 30px;
+    /*se centra cada figura dentro del grid*/
+    justify-content: center;
+
+    /*probamos la opcion masonry aun experimental
+    grid-template-rows: masonry;* ...aun no esta disponible*/
+    margin: 0 auto;
+ }
+
+ /*determino el ancho de los img*/
+ .grid-item{
+    width: 230px;
+    /*se estandariza untamaño para todas las fotos
+    height: 200px;
+   *pero se deforman las fotos, se aplica este comando para dejar el tamaño mejor y recortar lo que no entra en el tamaño establecido
+    object-fit: cover;*/
+
+    margin-bottom: 40px;
+    border-radius: 15px;
+    cursor: zoom-in;
+    background-color: lightgray;
+ }
+
+ /*efecto de sombra sobre la foto*/
+ .grid-item:hover{
+    filter: opacity(0.9);
+ }
